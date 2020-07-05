@@ -13,6 +13,14 @@ public class ObjectPooler : MonoBehaviour
         public int size;
     }
 
+    public GameObject parentHolder;
+
+    public static ObjectPooler Instance;
+
+    private void Awake() {
+        Instance = this;
+    }
+
     public List<Pool> pools;
     public Dictionary<string, Queue<GameObject>> poolDict;
 
@@ -28,8 +36,21 @@ public class ObjectPooler : MonoBehaviour
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
-
             poolDict.Add(pool.tag, objectPool);
         }
+    }
+
+    public GameObject SpawnFromPool(string tag, Vector3 pos, Quaternion rot)
+    {
+        if (!poolDict.ContainsKey(tag)) {
+            Debug.Log("Pool Dictionary Didnt Exist. Wupsie");
+            return null;
+        }
+        GameObject objectToSpawn = poolDict[tag].Dequeue();
+        objectToSpawn.SetActive(true);
+        objectToSpawn.transform.position = pos;
+        objectToSpawn.transform.rotation = rot;
+        poolDict[tag].Enqueue(objectToSpawn);
+        return objectToSpawn;
     }
 }

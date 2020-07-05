@@ -7,6 +7,7 @@ public class WorldGeneration : MonoBehaviour
 {
     public GameObject objectHolder;
     public GameObject block;
+    public Camera publicCamera;
 
     public int width;
     public int height;
@@ -22,13 +23,24 @@ public class WorldGeneration : MonoBehaviour
     void Start()
     {
         GenerateMap();
+        if (map != null) {
+            for (int x = 0; x < width; x++) {
+                for (int y = 0; y < height; y++) {
+                    Vector3 pos = new Vector3(-width / 2 + x + 0.5f, -height / 2 + y + 0.5f, objectHolder.transform.position.y - 1f);
+                    if (IsVisible(pos, Vector3.one, publicCamera)) {
+                        Debug.Log("Test");
+                        ObjectPooler.Instance.SpawnFromPool("Earth", pos, objectHolder.transform.rotation);
+                    }
+                }
+            } 
+        }
     }
 
     public void GenerateMap()
     {
         map = new int[width, height];
         RandomFillMap();
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < 2; i++)
         {
             SmoothMapGeneration();
         }
@@ -40,7 +52,7 @@ public class WorldGeneration : MonoBehaviour
         {
             seed = Time.time.ToString();
         }
-        System.Random randomNumberGen = new System.Random(seed.GetHashCode());
+        System.Random randomNumberGen = new System.Random(seed.ToString().GetHashCode());
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
@@ -105,15 +117,20 @@ public class WorldGeneration : MonoBehaviour
             {
                 for (int y = 0; y < height; y++) 
                 {
-                    Gizmos.color = (map[x, y] == 1)? Color.white : Color.clear;
-                    Vector3 pos = new Vector3(-width / 2 + x + 0.5f, objectHolder.transform.position.y, -height / 2 + y + 0.5f);
-                    Gizmos.DrawCube(pos, Vector3.one);
-                    if (map[x, y] == 0)
-                    {
-                        Instantiate(block, pos, objectHolder.transform.rotation);
-                    }
+                    // Gizmos.color = (map[x, y] == 1)? Color.white : Color.clear;
+                    // Matrix4x4 rotationMatrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
+                    // Gizmos.matrix = rotationMatrix;
+                    // Vector3 pos = new Vector3(-width / 2 + x + 0.5f, objectHolder.transform.position.y - 1f, -height / 2 + y + 0.5f);
+                    // Gizmos.DrawCube(pos, Vector3.one);
                 }
             }
         }
+    }
+
+    bool IsVisible(Vector3 pos, Vector3 boundSize, Camera camera)
+    {
+        var bounds = new Bounds(pos, boundSize);
+        var planes = GeometryUtility.CalculateFrustumPlanes(camera);
+        return GeometryUtility.TestPlanesAABB(planes, bounds);
     }
 }

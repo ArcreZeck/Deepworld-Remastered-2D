@@ -36,7 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Interface\AccPageManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\ClickSound.cs" />
+     <Compile Include="Assets\Scripts\Interface\Menu.cs" />
+     <Compile Include="Assets\Scripts\Interface\UILButtonManager.cs" />
      <Compile Include="Assets\Scripts\Player\DeepworldData.cs" />
      <Compile Include="Assets\Scripts\Player\DwData.cs" />
      <Compile Include="Assets\Scripts\Player\SaveStatistics.cs" />

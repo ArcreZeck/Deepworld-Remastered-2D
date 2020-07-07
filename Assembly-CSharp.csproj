@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Interface\AccPageManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\BackgroundSound.cs" />
      <Compile Include="Assets\Scripts\Interface\ClickSound.cs" />
      <Compile Include="Assets\Scripts\Interface\Menu.cs" />
      <Compile Include="Assets\Scripts\Interface\UILButtonManager.cs" />

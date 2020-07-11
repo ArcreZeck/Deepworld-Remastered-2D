@@ -19,13 +19,6 @@ public class ObjectPooler : MonoBehaviour
 
     private void Awake() {
         Instance = this;
-    }
-
-    public List<Pool> pools;
-    public Dictionary<string, Queue<GameObject>> poolDict;
-
-    void Start() 
-    {
         poolDict = new Dictionary<string, Queue<GameObject>>();
         foreach(Pool pool in pools) 
         {
@@ -40,7 +33,10 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
-    public GameObject SpawnFromPool(string tag, Vector3 pos, Quaternion rot)
+    public List<Pool> pools;
+    public Dictionary<string, Queue<GameObject>> poolDict;
+
+    public GameObject SpawnFromPool(string tag, Vector3 pos)
     {
         if (!poolDict.ContainsKey(tag)) {
             Debug.Log("Pool Dictionary Didnt Exist. Wupsie");
@@ -49,7 +45,6 @@ public class ObjectPooler : MonoBehaviour
         GameObject objectToSpawn = poolDict[tag].Dequeue();
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = pos;
-        objectToSpawn.transform.rotation = rot;
         poolDict[tag].Enqueue(objectToSpawn);
         return objectToSpawn;
     }

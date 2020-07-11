@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - SolidBlock
   - 
   - 
   - 
@@ -46,4 +46,10 @@ TagManager:
     locked: 0
   - name: Block
     uniqueID: 441589379
+    locked: 0
+  - name: Entities
+    uniqueID: 3004025595
+    locked: 0
+  - name: PhysicalUI
+    uniqueID: 1147872849
     locked: 0

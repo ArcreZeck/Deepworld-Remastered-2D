@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - id0
+  - id1
+  - id2
+  - id3
+  - id4
+  - id5
+  - id6
+  - id7
   layers:
   - Default
   - TransparentFX
@@ -46,6 +54,9 @@ TagManager:
     locked: 0
   - name: Block
     uniqueID: 441589379
+    locked: 0
+  - name: EarthFilter
+    uniqueID: 2343385883
     locked: 0
   - name: Entities
     uniqueID: 3004025595

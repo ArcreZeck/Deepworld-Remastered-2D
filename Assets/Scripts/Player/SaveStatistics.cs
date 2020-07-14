@@ -2,8 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public static class SaveStatistics
-{
+public static class SaveStatistics {
     public static void SaveData(DwData data) {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/statistics.dwd";

@@ -1,0 +1,595 @@
+[
+    {
+        "id": "0",
+        "name": "air",
+        "ui": "Air",
+        "sprite": "inventory/unknown",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "1",
+        "name": "shillings",
+        "ui": "Shillings",
+        "sprite": "inventory/accessories/shillings",
+        "placeable": false,
+        "dim": 0
+    },
+    {
+        "id": "2",
+        "name": "earth",
+        "ui": "Earth",
+        "sprite": "inventory/ground/earth",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "3",
+        "name": "compost",
+        "ui": "Compost",
+        "sprite": "inventory/ground/earth-compost",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "4",
+        "name": "sandstone",
+        "ui": "Sandstone",
+        "sprite": "inventory/ground/sandstone",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "5",
+        "name": "limestone",
+        "ui": "Limestone",
+        "sprite": "inventory/ground/limestone",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "6",
+        "name": "sand",
+        "ui": "Sand",
+        "sprite": "inventory/ground/sand",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "7",
+        "name": "wood-rubble",
+        "ui": "Wood Rubble",
+        "sprite": "inventory/rubble/wood",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "8",
+        "name": "stone-rubble",
+        "ui": "Stone Rubble",
+        "sprite": "inventory/rubble/stone",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": [2, 1]
+    },
+    {
+        "id": "9",
+        "name": "flax",
+        "ui": "Flax",
+        "sprite": "inventory/ground/flax",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "10",
+        "name": "resin",
+        "ui": "Resin",
+        "sprite": "inventory/ground/resin",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "11",
+        "name": "clay",
+        "ui": "Clay",
+        "sprite": "inventory/ground/clay",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "12",
+        "name": "salt",
+        "ui": "Salt",
+        "sprite": "inventory/ground/salt",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "13",
+        "name": "fire-salt",
+        "ui": "Fire Salt",
+        "sprite": "inventory/ground/fire-salt",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "14",
+        "name": "iron-ore",
+        "ui": "Iron Ore",
+        "sprite": "inventory/ground/iron-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "16",
+        "name": "copper-ore",
+        "ui": "Copper Ore",
+        "sprite": "inventory/ground/copper-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "17",
+        "name": "zinc-ore",
+        "ui": "Zinc Ore",
+        "sprite": "inventory/ground/zinc-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "18",
+        "name": "lead-ore",
+        "ui": "Lead Ore",
+        "sprite": "inventory/ground/lead-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "19",
+        "name": "quartz-ore",
+        "ui": "Quartz Ore",
+        "sprite": "inventory/ground/quartz-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "20",
+        "name": "sulfur-ore",
+        "ui": "Sulfur Ore",
+        "sprite": "inventory/ground/sulfur-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "21",
+        "name": "marble-ore",
+        "ui": "Marble Ore",
+        "sprite": "inventory/ground/marble-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "22",
+        "name": "bloodstone-ore",
+        "ui": "Bloodstone Ore",
+        "sprite": "inventory/ground/bloodstone-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "23",
+        "name": "beryllium-ore",
+        "ui": "Beryllium Ore",
+        "sprite": "inventory/ground/beryllium-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "24",
+        "name": "diamond-ore",
+        "ui": "Diamond Ore",
+        "sprite": "inventory/ground/diamond-ore",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    },
+    {
+        "id": "",
+        "name": "",
+        "ui": "",
+        "sprite": "",
+        "placedSprite": "",
+        "placeable": true,
+        "dim": 1
+    }
+]

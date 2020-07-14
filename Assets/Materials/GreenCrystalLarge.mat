@@ -43,7 +43,7 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     m_Colors:
-    - CrystalTint: {r: 0, g: 0.31132078, b: 0.053624645, a: 0}
+    - CrystalTint: {r: 0, g: 0.18867922, b: 0.033436805, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

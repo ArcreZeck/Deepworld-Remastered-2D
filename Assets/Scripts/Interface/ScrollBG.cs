@@ -9,8 +9,8 @@ public class ScrollBG : MonoBehaviour
     private void Update() {
         foreach (GameObject bg in backgrounds) {
             bg.transform.position = new Vector3(bg.transform.position.x - .5f, bg.transform.position.y, bg.transform.position.z);
-            if (bg.transform.position.x <= -2048f) {
-                bg.transform.position = new Vector3(4095f, bg.transform.position.y, bg.transform.position.z);
+            if (bg.transform.position.x <= -1024f) {
+                bg.transform.position = new Vector3(5119f, bg.transform.position.y, bg.transform.position.z);
             }
         }
     }

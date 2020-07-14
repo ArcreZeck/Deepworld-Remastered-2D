@@ -5,6 +5,8 @@ using UnityEngine;
 public class UILButtonManager : MonoBehaviour
 {
     public GameObject[] gameObjects;
+    public bool checkSames = false;
+    int prevIndex;
 
     public void ToggleButton(int index) {
         if (!gameObjects[index].activeInHierarchy) {
@@ -13,7 +15,12 @@ public class UILButtonManager : MonoBehaviour
             }
             gameObjects[index].SetActive(true);
         } else if (gameObjects[index].activeInHierarchy) {
-            gameObjects[index].SetActive(false);
+            if (checkSames && index == prevIndex) {
+                
+            } else {
+                gameObjects[index].SetActive(false);
+            }
         }
+        prevIndex = index;
     }
 }

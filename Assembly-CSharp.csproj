@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\Interface\Menu.cs" />
      <Compile Include="Assets\Scripts\Interface\ScrollBG.cs" />
      <Compile Include="Assets\Scripts\Interface\ScrollBGCrystals.cs" />
+     <Compile Include="Assets\Scripts\Interface\TestScript.cs" />
      <Compile Include="Assets\Scripts\Interface\UILButtonManager.cs" />
      <Compile Include="Assets\Scripts\Interface\UnivSelector.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDrag.cs" />
@@ -54,8 +55,10 @@
      <Compile Include="Assets\Scripts\Player\SaveStatistics.cs" />
      <Compile Include="Assets\Scripts\Player\SaveWorld.cs" />
      <Compile Include="Assets\Scripts\World\BlockCont.cs" />
+     <Compile Include="Assets\Scripts\World\BlockPrefab.cs" />
      <Compile Include="Assets\Scripts\World\CaveGenerator.cs" />
      <Compile Include="Assets\Scripts\World\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\World\RendererExtensions.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Programs/Unity/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -36,7 +36,7 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> pools;
     public Dictionary<string, Queue<GameObject>> poolDict;
 
-    public GameObject SpawnFromPool(string id, string tag, Vector3 pos)
+    public GameObject SpawnFromPool(string tag, Vector3 pos)
     {
         if (!poolDict.ContainsKey(tag)) {
             Debug.Log("Pool Dictionary Didnt Exist. Wupsie");
@@ -45,7 +45,6 @@ public class ObjectPooler : MonoBehaviour
         GameObject objectToSpawn = poolDict[tag].Dequeue();
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = pos;
-        objectToSpawn.tag = id;
         poolDict[tag].Enqueue(objectToSpawn);
         return objectToSpawn;
     }

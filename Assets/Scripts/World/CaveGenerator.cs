@@ -53,7 +53,7 @@ public class CaveGenerator : MonoBehaviour
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
                 if (cavePoints[x, y] == 1) {
-                    ObjectPooler.Instance.SpawnFromPool("id1", "Block", new Vector3(((-width / 2 + x) + 10) * 102.4f, (-height + y - 10) * 102.4f, 1f));
+                    ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(((-width / 2 + x) + 10) * 102.4f, (-height + y - 10) * 102.4f, 1f));
                 }
             }
         }

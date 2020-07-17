@@ -12,7 +12,9 @@ public class BlockCont : MonoBehaviour
         tempHealth = blockHealth;
     }
 
-    public void DestroyBlock() {
+    void OnMouseDown()
+    {
+        // Destroy the gameObject after clicking on it
         Destroy(gameObject);
     }
 

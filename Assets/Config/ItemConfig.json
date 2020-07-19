@@ -3,7 +3,7 @@
         "id": "0",
         "name": "air",
         "ui": "Air",
-        "sprite": "inventory/unknown",
+        "sprite": "Inventory/unknown",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -12,7 +12,7 @@
         "id": "1",
         "name": "shillings",
         "ui": "Shillings",
-        "sprite": "inventory/accessories/shillings",
+        "sprite": "Inventory/accessories/shillings",
         "placeable": false,
         "dim": 0
     },
@@ -20,7 +20,7 @@
         "id": "2",
         "name": "earth",
         "ui": "Earth",
-        "sprite": "inventory/ground/earth",
+        "sprite": "Inventory/ground/earth",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -29,7 +29,7 @@
         "id": "3",
         "name": "compost",
         "ui": "Compost",
-        "sprite": "inventory/ground/earth-compost",
+        "sprite": "Inventory/ground/earth-compost",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -38,7 +38,7 @@
         "id": "4",
         "name": "sandstone",
         "ui": "Sandstone",
-        "sprite": "inventory/ground/sandstone",
+        "sprite": "Inventory/ground/sandstone",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -47,7 +47,7 @@
         "id": "5",
         "name": "limestone",
         "ui": "Limestone",
-        "sprite": "inventory/ground/limestone",
+        "sprite": "Inventory/ground/limestone",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -56,7 +56,7 @@
         "id": "6",
         "name": "sand",
         "ui": "Sand",
-        "sprite": "inventory/ground/sand",
+        "sprite": "Inventory/ground/sand",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -65,7 +65,7 @@
         "id": "7",
         "name": "wood-rubble",
         "ui": "Wood Rubble",
-        "sprite": "inventory/rubble/wood",
+        "sprite": "Inventory/rubble/wood",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -74,7 +74,7 @@
         "id": "8",
         "name": "stone-rubble",
         "ui": "Stone Rubble",
-        "sprite": "inventory/rubble/stone",
+        "sprite": "Inventory/rubble/stone",
         "placedSprite": "",
         "placeable": true,
         "dim": [2, 1]
@@ -83,7 +83,7 @@
         "id": "9",
         "name": "flax",
         "ui": "Flax",
-        "sprite": "inventory/ground/flax",
+        "sprite": "Inventory/ground/flax",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -92,7 +92,8 @@
         "id": "10",
         "name": "resin",
         "ui": "Resin",
-        "sprite": "inventory/ground/resin",
+        "width": true,
+        "sprite": "Inventory/ground/resin",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -101,7 +102,7 @@
         "id": "11",
         "name": "clay",
         "ui": "Clay",
-        "sprite": "inventory/ground/clay",
+        "sprite": "Inventory/ground/clay",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -110,7 +111,7 @@
         "id": "12",
         "name": "salt",
         "ui": "Salt",
-        "sprite": "inventory/ground/salt",
+        "sprite": "Inventory/ground/salt",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -119,7 +120,7 @@
         "id": "13",
         "name": "fire-salt",
         "ui": "Fire Salt",
-        "sprite": "inventory/ground/fire-salt",
+        "sprite": "Inventory/ground/fire-salt",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -128,7 +129,7 @@
         "id": "14",
         "name": "iron-ore",
         "ui": "Iron Ore",
-        "sprite": "inventory/ground/iron-ore",
+        "sprite": "Inventory/ground/iron-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -137,7 +138,7 @@
         "id": "16",
         "name": "copper-ore",
         "ui": "Copper Ore",
-        "sprite": "inventory/ground/copper-ore",
+        "sprite": "Inventory/ground/copper-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -146,7 +147,7 @@
         "id": "17",
         "name": "zinc-ore",
         "ui": "Zinc Ore",
-        "sprite": "inventory/ground/zinc-ore",
+        "sprite": "Inventory/ground/zinc-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -155,7 +156,7 @@
         "id": "18",
         "name": "lead-ore",
         "ui": "Lead Ore",
-        "sprite": "inventory/ground/lead-ore",
+        "sprite": "Inventory/ground/lead-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -164,7 +165,7 @@
         "id": "19",
         "name": "quartz-ore",
         "ui": "Quartz Ore",
-        "sprite": "inventory/ground/quartz-ore",
+        "sprite": "Inventory/ground/quartz-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -173,7 +174,7 @@
         "id": "20",
         "name": "sulfur-ore",
         "ui": "Sulfur Ore",
-        "sprite": "inventory/ground/sulfur-ore",
+        "sprite": "Inventory/ground/sulfur-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -182,7 +183,7 @@
         "id": "21",
         "name": "marble-ore",
         "ui": "Marble Ore",
-        "sprite": "inventory/ground/marble-ore",
+        "sprite": "Inventory/ground/marble-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -191,7 +192,7 @@
         "id": "22",
         "name": "bloodstone-ore",
         "ui": "Bloodstone Ore",
-        "sprite": "inventory/ground/bloodstone-ore",
+        "sprite": "Inventory/ground/bloodstone-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -200,7 +201,7 @@
         "id": "23",
         "name": "beryllium-ore",
         "ui": "Beryllium Ore",
-        "sprite": "inventory/ground/beryllium-ore",
+        "sprite": "Inventory/ground/beryllium-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
@@ -209,52 +210,52 @@
         "id": "24",
         "name": "diamond-ore",
         "ui": "Diamond Ore",
-        "sprite": "inventory/ground/diamond-ore",
+        "sprite": "Inventory/ground/diamond-ore",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
     },
     {
-        "id": "",
-        "name": "",
-        "ui": "",
-        "sprite": "",
+        "id": "25",
+        "name": "blue-crystal",
+        "ui": "Blue Crystal",
+        "sprite": "Inventory/ground/crystal-blue-1",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
     },
     {
-        "id": "",
-        "name": "",
-        "ui": "",
-        "sprite": "",
+        "id": "26",
+        "name": "medium-blue-crystal",
+        "ui": "Medium Blue Crystal",
+        "sprite": "Inventory/ground/crystal-blue-2",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
     },
     {
-        "id": "",
-        "name": "",
-        "ui": "",
-        "sprite": "",
+        "id": "27",
+        "name": "large-blue-crystal",
+        "ui": "Large Blue Crystal",
+        "sprite": "Inventory/ground/crystal-blue-4",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
     },
     {
-        "id": "",
-        "name": "",
-        "ui": "",
-        "sprite": "",
+        "id": "28",
+        "name": "purple-crystal",
+        "ui": "Purple Crystal",
+        "sprite": "Inventory/ground/crystal-purple-1",
         "placedSprite": "",
         "placeable": true,
         "dim": 1
     },
     {
-        "id": "",
-        "name": "",
-        "ui": "",
-        "sprite": "",
+        "id": "29",
+        "name": "large-purple-crystal",
+        "ui": "Large Purple Crystal",
+        "sprite": "Inventory/ground/crystal-purple-large",
         "placedSprite": "",
         "placeable": true,
         "dim": 1

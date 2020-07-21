@@ -42,7 +42,6 @@ public class PlayerCont : MonoBehaviour {
             }
 
             ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta, 1f));
-            // Instantiate(placedBlock, new Vector2(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta), Quaternion.identity);
         }
     }
 }

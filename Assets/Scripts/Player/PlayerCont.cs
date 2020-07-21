@@ -41,7 +41,9 @@ public class PlayerCont : MonoBehaviour {
                 delta = 0;
             }
 
-            ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta, 1f));
+            GameObject currentBlock = ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta, 1f));
+            SpriteMask spriteMask = currentBlock.GetComponent<SpriteMask>();
+            spriteMask.backSortingOrder = 0;
         }
     }
 }

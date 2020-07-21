@@ -7,35 +7,48 @@ public class BlockCont : MonoBehaviour
     public int blockId;
     float blockHealth = 10f;
     float tempHealth = 10f;
+    private SpriteRenderer spriteRenderer;
 
     private void Start() {
         tempHealth = blockHealth;
+        GameObject child = gameObject.transform.GetChild(0).gameObject;
+        spriteRenderer = child.GetComponent<SpriteRenderer>();
     }
 
     void OnMouseDown()
     {
-        // Destroy the gameObject after clicking on it
-        Destroy(gameObject);
+        if (tempHealth == 10f)
+        {
+            tempHealth -= 3f;
+            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
+        }
+        else if (tempHealth == 7f)
+        {
+            tempHealth -= 3f;
+            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
+        }
+        else if (tempHealth == 4f)
+        {
+            tempHealth -= 4f;
+            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
+        }
+        else if (tempHealth <= 0f)
+        {
+            Destroy(gameObject);
+        }
     }
+
 
     private bool IsCloseToTag(string tag, float minimumDistance) {
         GameObject[] goWithTag = GameObject.FindGameObjectsWithTag(tag);
         for (int i = 0; i < goWithTag.Length; ++i) {
-            if (Vector3.Distance(transform.position, goWithTag[i].transform.position) <= minimumDistance)
+            if (Vector3.Distance(transform.position, goWithTag[i].transform.position) <= minimumDistance) {
                 return true;
+            }
         }
         return false;
     }
 
     private void Update() {
-        // if (IsCloseToTag("Player", 10f)) {
-        //     if (Input.GetMouseButton(0)) {
-        //         tempHealth -= 0.1f;
-        //         Debug.Log(tempHealth);
-        //         if (tempHealth == 0f) {
-        //             DestroyBlock();
-        //         }
-        //     }
-        // }
     }
 }

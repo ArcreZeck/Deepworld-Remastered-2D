@@ -14,20 +14,18 @@ public class BlockCont : MonoBehaviour {
         spriteRenderer = child.GetComponent<SpriteRenderer> ();
     }
 
-    void Update () {
-        if (Input.GetMouseButton(0)) {
-            if (tempHealth == 10f) {
-                tempHealth -= 3f;
-                spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack1");
-            } else if (tempHealth == 7f) {
-                tempHealth -= 3f;
-                spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack2");
-            } else if (tempHealth == 4f) {
-                tempHealth -= 4f;
-                spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack3");
-            } else if (tempHealth <= 0f) {
-                Destroy (gameObject);
-            }
+    private void OnMouseDown () {
+        if (tempHealth == 10f) {
+            tempHealth -= 3f;
+            spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack1");
+        } else if (tempHealth == 7f) {
+            tempHealth -= 3f;
+            spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack2");
+        } else if (tempHealth == 4f) {
+            tempHealth -= 4f;
+            spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack3");
+        } else if (tempHealth <= 0f) {
+            Destroy (gameObject);
         }
     }
 

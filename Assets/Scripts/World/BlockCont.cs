@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ public class BlockCont : MonoBehaviour {
         spriteRenderer = child.GetComponent<SpriteRenderer> ();
     }
 
-    void OnMouseDown () {
+    private void OnMouseDown () {
         if (tempHealth == 10f) {
             tempHealth -= 3f;
             spriteRenderer.sprite = Resources.Load<Sprite> ("Effects/crack1");

@@ -32,7 +32,13 @@ Material:
         m_Texture: {fileID: 2800000, guid: 1885042ec8975184089b3b649c931fc6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - AfterOpacity: 0.7
+    - NoiseSize: 50
+    - _BorderOffset: 0.05
+    - _Fade: 0.3
     m_Colors:
     - Color_CC98F2BD: {r: 0.6320754, g: 0, b: 0.062371407, a: 0}
     - CrystalTint: {r: 0.15686275, g: 0, b: 0, a: 0}
+    - _Color: {r: 1.733884, g: 0.815353, b: 0.02453606, a: 0}
+  m_BuildTextureStacks: []

@@ -41,9 +41,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - AfterOpacity: 0.7
+    - NoiseSize: 50
+    - _BorderOffset: 0.05
     - _EnableExternalAlpha: 0
+    - _Fade: 0.3
     m_Colors:
     - CrystalTint: {r: 0.3962264, g: 0.18801333, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

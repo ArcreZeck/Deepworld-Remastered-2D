@@ -8,6 +8,7 @@ public class DwData : MonoBehaviour
     public int curLevel = 1;
     public int expToGo = 150;
     public int curCrowns = 50;
+    public int[] curItems = new int[]{0, 1, 0, 2};
 
     public void SaveUserData() {
         SaveStatistics.SaveData(this);
@@ -19,5 +20,6 @@ public class DwData : MonoBehaviour
         curLevel = data.curLevel;
         expToGo = data.expToGo;
         curCrowns = data.curCrowns;
+        curItems = data.curItems;
     }
 }

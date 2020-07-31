@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BlockCont : MonoBehaviour {
     public int blockId;
@@ -15,30 +16,36 @@ public class BlockCont : MonoBehaviour {
         spriteRenderer = child.GetComponent<SpriteRenderer>();
     }
 
-    private void OnMouseDrag() {
-        if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
-            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
-        } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
-            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
-        } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
-            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
-        } else if (tempHealth >= 0) {
-            Destroy(gameObject);
+    private void OnMouseOver() {
+        if (Input.GetMouseButton(0)) {
+            if (!EventSystem.current.IsPointerOverGameObject()) {
+                if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
+                    spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
+                } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
+                    spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
+                } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
+                    spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
+                } else if (tempHealth >= 0) {
+                    Destroy(gameObject);
+                }
+                tempHealth--;
+            }
         }
-        tempHealth--;
     }
 
     private void OnMouseDown() {
-        if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
-            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
-        } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
-            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
-        } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
-            spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
-        } else if (tempHealth >= 0) {
-            Destroy(gameObject);
+        if (!EventSystem.current.IsPointerOverGameObject()) {
+            if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
+                spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
+            } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
+                spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
+            } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
+                spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
+            } else if (tempHealth >= 0) {
+                Destroy(gameObject);
+            }
+            tempHealth -= tempHealth / 4;
         }
-        tempHealth -= tempHealth / 4;
     }
 
     // private void Update() {

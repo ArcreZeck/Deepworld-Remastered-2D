@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject loader;
+
     public void playGame() {
         loader.SetActive(true);
         if (loader.activeInHierarchy == true) {
             SceneManager.LoadScene("SelectionMenu");
         }
     }
+
+    public void exitGame() {
+        Application.Quit();
+    }   
 }

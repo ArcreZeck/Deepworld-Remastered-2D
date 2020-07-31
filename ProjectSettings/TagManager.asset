@@ -51,6 +51,9 @@ TagManager:
   - name: EarthFilter
     uniqueID: 2343385883
     locked: 0
+  - name: Purifier
+    uniqueID: 3022279673
+    locked: 0
   - name: Entities
     uniqueID: 3004025595
     locked: 0

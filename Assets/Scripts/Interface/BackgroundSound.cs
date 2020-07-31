@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class BackgroundSound : MonoBehaviour
 {
-    bool musicPlaying = false;
     public AudioSource[] clips;
-    int index;
+    int index = 0;
+    int prevIndex = 0;
 
     void Start() {
-        index = 0;
-    }
-
-    void Update() {
-        if (!musicPlaying) StartCoroutine(PlayMusic());
-    }
-
-    IEnumerator PlayMusic() {
-        musicPlaying = true;
-        int prevIndex = index;
         while (index == prevIndex) {
+            Debug.Log("Getting new Index..");
             index = Random.Range(0, clips.Length - 1);
         }
+        StartCoroutine(playSong());
+    }
+
+    IEnumerator playSong() {
+        Debug.Log("Running playSong()");
         clips[index].Play();
-        yield return new WaitUntil(() => clips[index].isPlaying);
-        yield return new WaitUntil(() => !clips[index].isPlaying);
-        musicPlaying = false;
+        Debug.Log("Playing Song...");
+        yield return new WaitForSeconds(clips[index].clip.length);
+        prevIndex = index;
+        while (index == prevIndex) {
+            Debug.Log("Getting new Index..");
+            index = Random.Range(0, clips.Length - 1);
+        }
+        StartCoroutine(playSong());
     }
 }

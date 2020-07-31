@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerCont : MonoBehaviour {
     public LayerMask platformLayerMask;
@@ -9,6 +10,9 @@ public class PlayerCont : MonoBehaviour {
     public Rigidbody2D rb2;
     public Transform mainTransform;
     public Camera mainCamera;
+
+    Ray ray;    
+    RaycastHit2D hit = new RaycastHit2D(); 
 
     public GameObject placedBlock;
 
@@ -27,35 +31,33 @@ public class PlayerCont : MonoBehaviour {
         }
     }
 
-    bool IsMouseOnBlock() {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit rayHit;
-        bool isOn = false;
-        // RaycastHit sphereHit;
-        if(Physics.Raycast(ray, out rayHit)){
-            if (rayHit.collider.gameObject.tag == "Block") {
-                isOn = true;
-            }
+    bool IsMouseOverBlock(Ray ray, RaycastHit2D hit) {
+        bool returnBool = false;
+        hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
+        if (hit.collider == null) {
+            return returnBool;
         }
-        // if(Physics.SphereCast(ray, 1, sphereHit)){
-        //  Check if sphereHit.collider.gameObject is your object
-        //  If it is, the cursor is near it
-        // }
-        return isOn;
+        if (hit.collider.gameObject.tag == "SolidBlockTag") {
+            returnBool = true;
+        }
+        return returnBool;
     }
 
     void Update() {
-        if (!IsMouseOnBlock()) {
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (!EventSystem.current.IsPointerOverGameObject()) {
             if (Input.GetMouseButton(1)) {
-                Vector2 mousePos2D = Input.mousePosition;
-                float screenToCameraDistance = mainCamera.nearClipPlane;
-                Vector3 mousePosNearClipPlane = new Vector3(mousePos2D.x, mousePos2D.y - 102.4f, screenToCameraDistance);
-                Vector3 worldPointPos = mainCamera.ScreenToWorldPoint(mousePosNearClipPlane);
-                float delta = 102.4f;
-                if (worldPointPos.y <= 0) delta = 0;
-                GameObject currentBlock = ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta, 1f));
-                SpriteMask spriteMask = currentBlock.GetComponent<SpriteMask>();
-                spriteMask.backSortingOrder = 0;
+                if (!IsMouseOverBlock(ray, hit)) {
+                    Vector2 mousePos2D = Input.mousePosition;
+                    float screenToCameraDistance = mainCamera.nearClipPlane;
+                    Vector3 mousePosNearClipPlane = new Vector3(mousePos2D.x, mousePos2D.y - 102.4f, screenToCameraDistance);
+                    Vector3 worldPointPos = mainCamera.ScreenToWorldPoint(mousePosNearClipPlane);
+                    float delta = 102.4f;
+                    if (worldPointPos.y <= 0) delta = 0;
+                    GameObject currentBlock = ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta, 1f));
+                    SpriteMask spriteMask = currentBlock.GetComponent<SpriteMask>();
+                    spriteMask.backSortingOrder = 0;
+                }
             }
         }
     }

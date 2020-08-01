@@ -48,21 +48,6 @@ public class BlockCont : MonoBehaviour {
         }
     }
 
-    // private void Update() {
-    //     if (Input.GetMouseButtonDown(0)) {
-    //         if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
-    //             spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
-    //         } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
-    //             spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
-    //         } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
-    //             spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
-    //         } else if (tempHealth >= 0) {
-    //             Destroy(gameObject);
-    //         }
-    //         tempHealth--;
-    //     }
-    // }
-
     private bool IsCloseToTag(string tag, float minimumDistance) {
         GameObject[] goWithTag = GameObject.FindGameObjectsWithTag (tag);
         for (int i = 0; i < goWithTag.Length; ++i) {

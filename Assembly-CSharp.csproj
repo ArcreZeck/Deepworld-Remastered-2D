@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\World\BlockCont.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCont.cs" />
      <Compile Include="Assets\Scripts\World\RendererExtensions.cs" />
+     <Compile Include="Assets\Scripts\World\RotateMedium.cs" />
      <Compile Include="Assets\Scripts\Interface\ScrollBG.cs" />
      <Compile Include="Assets\Scripts\World\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Player\DeepworldData.cs" />
@@ -64,7 +65,7 @@
      <Compile Include="Assets\Scripts\Interface\AccPageManager.cs" />
      <Compile Include="Assets\Scripts\Interface\BarCont.cs" />
      <Compile Include="Assets\Scripts\Player\DwData.cs" />
-     <Compile Include="Assets\Scripts\World\RotateMedium.cs" />
+     <Compile Include="Assets\Scripts\Shaders\ShieldController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Programs/Unity/2020.1.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

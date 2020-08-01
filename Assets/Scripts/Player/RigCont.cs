@@ -18,5 +18,11 @@ public class RigCont : MonoBehaviour
         } else {
             anim.SetBool("isRunning", false);
         }
+
+        if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.Space)) {
+            anim.SetBool("isJumping", true);
+        } else {
+            anim.SetBool("isJumping", false);
+        }
     }
 }

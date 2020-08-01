@@ -10,14 +10,19 @@ public class PlayerCont : MonoBehaviour {
     public Rigidbody2D rb2;
     public Transform mainTransform;
     public Camera mainCamera;
+    private float distToGround;
 
     Ray ray;    
     RaycastHit2D hit = new RaycastHit2D(); 
 
     public GameObject placedBlock;
 
+    void Start() {
+        distToGround = GetComponent<Collider>().bounds.extents.y;
+    }
+
     void FixedUpdate() {
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) rb2.velocity = Vector2.up * jumpSpeed;
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) && IsGrounded()) rb2.velocity = Vector2.up * jumpSpeed;
         rb2.constraints = RigidbodyConstraints2D.FreezeRotation;
         if (Input.GetKey (KeyCode.A)) {
             rb2.velocity = new Vector2(-speed, rb2.velocity.y);
@@ -41,6 +46,10 @@ public class PlayerCont : MonoBehaviour {
             returnBool = true;
         }
         return returnBool;
+    }
+
+    private bool IsGrounded() {
+        return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
     }
 
     void Update() {

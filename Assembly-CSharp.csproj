@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Interface\UILButtonManager.cs" />
+     <Compile Include="Assets\Imphenzia\GradientSky\Scripts\GradientSkyCamera.cs" />
      <Compile Include="Assets\Scripts\Player\RigCont.cs" />
      <Compile Include="Assets\Scripts\Interface\Menu.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDrop.cs" />
@@ -51,13 +52,16 @@
      <Compile Include="Assets\Scripts\Interface\ScrollBG.cs" />
      <Compile Include="Assets\Scripts\World\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Player\DeepworldData.cs" />
+     <Compile Include="Assets\Imphenzia\GradientSky\Scripts\Common\GradientSkyCommon.cs" />
      <Compile Include="Assets\Scripts\Interface\UnivSelector.cs" />
      <Compile Include="Assets\Scripts\Player\SaveWorld.cs" />
      <Compile Include="Assets\Scripts\Interface\ClickSound.cs" />
      <Compile Include="Assets\Scripts\Player\SaveStatistics.cs" />
+     <Compile Include="Assets\Scripts\Shaders\ShieldController.cs" />
      <Compile Include="Assets\Scripts\Interface\TestScript.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDrag.cs" />
      <Compile Include="Assets\Scripts\PlayerStyle\FacialHairCont.cs" />
+     <Compile Include="Assets\Imphenzia\GradientSky\Scripts\GradientSkyObject.cs" />
      <Compile Include="Assets\Scripts\Interface\BackgroundSound.cs" />
      <Compile Include="Assets\Scripts\Player\CameraCont.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDataList.cs" />
@@ -65,7 +69,12 @@
      <Compile Include="Assets\Scripts\Interface\AccPageManager.cs" />
      <Compile Include="Assets\Scripts\Interface\BarCont.cs" />
      <Compile Include="Assets\Scripts\Player\DwData.cs" />
-     <Compile Include="Assets\Scripts\Shaders\ShieldController.cs" />
+     <Compile Include="Assets\Scripts\BlockEffects\PurifyWorld.cs" />
+     <Compile Include="Assets\Scripts\BlockEffects\TeleportBlue.cs" />
+     <Compile Include="Assets\Scripts\BlockEffects\TeleportYellow.cs" />
+     <None Include="Assets\Imphenzia\GradientSky\ReadMe - GradientSky.txt" />
+     <None Include="Assets\Imphenzia\GradientSky\Shaders\VertexColorCamera.shader" />
+     <None Include="Assets\Imphenzia\GradientSky\Shaders\VertexColorObject.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Programs/Unity/2020.1.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

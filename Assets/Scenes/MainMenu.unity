@@ -461,7 +461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DWRE Beta 0.6.2
+  m_Text: DWRE Beta 0.6.3
 --- !u!222 &314178930
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -645,36 +645,24 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Main Menu Changes
+  m_Text: '- Added player shield
 
 
-    - Hotbar and Inventory Changes
+    - Small changes to inventory
 
 
-    - Pause
-    Menu (Esc)
+    - Added
+    Dissolve shader
 
 
-    - Exit game button
+    - Added Flight / Jumping animation
 
 
-    - Removed Hiro''s Multiplayer
+    - Added some nice
+    Jetpack Particles when you fly
 
 
-    -
-    Removed the ugly puke sky.
-
-
-    - Block placing and destruction removed and
-    rewritten.
-
-
-    - Inventory backend scripts done.. Design changes
-
-
-    - Music
-    Changed
-
+    - A few other small backend changes
 
 '
 --- !u!222 &455522479

@@ -582,6 +582,17 @@ MonoBehaviour:
 
     - A few other small backend changes
 
+
+    -
+    Added more inventory tabs and scripts
+
+
+    - Working on portals
+
+
+    - Fixed
+    issues with building on x axis
+
 '
 --- !u!222 &455522479
 CanvasRenderer:

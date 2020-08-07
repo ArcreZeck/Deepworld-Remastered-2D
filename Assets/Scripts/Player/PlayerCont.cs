@@ -52,9 +52,11 @@ public class PlayerCont : MonoBehaviour {
                     float screenToCameraDistance = mainCamera.nearClipPlane;
                     Vector3 mousePosNearClipPlane = new Vector3(mousePos2D.x, mousePos2D.y - 102.4f, screenToCameraDistance);
                     Vector3 worldPointPos = mainCamera.ScreenToWorldPoint(mousePosNearClipPlane);
-                    float delta = 102.4f;
-                    if (worldPointPos.y <= 0) delta = 0;
-                    GameObject currentBlock = ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f, worldPointPos.y - worldPointPos.y % 102.4f + delta, 1f));
+                    float ydelta = 102.4f;
+                    float xdelta = 0;
+                    if (worldPointPos.y <= 0) ydelta = 0;
+                    if (worldPointPos.x <= 0) xdelta = 102.4f;
+                    GameObject currentBlock = ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f - xdelta, worldPointPos.y - worldPointPos.y % 102.4f + ydelta, 1f));
                     SpriteMask spriteMask = currentBlock.GetComponent<SpriteMask>();
                     spriteMask.backSortingOrder = 0;
                 }

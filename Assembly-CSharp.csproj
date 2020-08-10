@@ -57,8 +57,10 @@
      <Compile Include="Assets\Scripts\Player\SaveWorld.cs" />
      <Compile Include="Assets\Scripts\Interface\ClickSound.cs" />
      <Compile Include="Assets\Scripts\Player\SaveStatistics.cs" />
+     <Compile Include="Assets\Scripts\BlockEffects\TeleportYellow.cs" />
      <Compile Include="Assets\Scripts\Shaders\ShieldController.cs" />
      <Compile Include="Assets\Scripts\Interface\TestScript.cs" />
+     <Compile Include="Assets\Scripts\BlockEffects\PurifyWorld.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDrag.cs" />
      <Compile Include="Assets\Scripts\PlayerStyle\FacialHairCont.cs" />
      <Compile Include="Assets\Imphenzia\GradientSky\Scripts\GradientSkyObject.cs" />
@@ -67,11 +69,9 @@
      <Compile Include="Assets\Scripts\Inventory\ItemDataList.cs" />
      <Compile Include="Assets\Scripts\PlayerStyle\HairCont.cs" />
      <Compile Include="Assets\Scripts\Interface\AccPageManager.cs" />
+     <Compile Include="Assets\Scripts\BlockEffects\TeleportBlue.cs" />
      <Compile Include="Assets\Scripts\Interface\BarCont.cs" />
      <Compile Include="Assets\Scripts\Player\DwData.cs" />
-     <Compile Include="Assets\Scripts\BlockEffects\PurifyWorld.cs" />
-     <Compile Include="Assets\Scripts\BlockEffects\TeleportBlue.cs" />
-     <Compile Include="Assets\Scripts\BlockEffects\TeleportYellow.cs" />
      <None Include="Assets\Imphenzia\GradientSky\ReadMe - GradientSky.txt" />
      <None Include="Assets\Imphenzia\GradientSky\Shaders\VertexColorCamera.shader" />
      <None Include="Assets\Imphenzia\GradientSky\Shaders\VertexColorObject.shader" />

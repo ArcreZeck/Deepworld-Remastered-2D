@@ -379,7 +379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DWRE Beta 0.6.3
+  m_Text: DWRE Beta 0.6.4
 --- !u!222 &314178930
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -563,37 +563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added player shield
-
-
-    - Small changes to inventory
-
-
-    - Added
-    Dissolve shader
-
-
-    - Added Flight / Jumping animation
-
-
-    - Added some nice
-    Jetpack Particles when you fly
-
-
-    - A few other small backend changes
-
-
-    -
-    Added more inventory tabs and scripts
-
-
-    - Working on portals
-
-
-    - Fixed
-    issues with building on x axis
-
-'
+  m_Text: '- Fixed player hitbox'
 --- !u!222 &455522479
 CanvasRenderer:
   m_ObjectHideFlags: 0

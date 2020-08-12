@@ -59,6 +59,12 @@ public class PlayerCont : MonoBehaviour {
                     GameObject currentBlock = ObjectPooler.Instance.SpawnFromPool("Block", new Vector3(worldPointPos.x - worldPointPos.x % 102.4f - xdelta, worldPointPos.y - worldPointPos.y % 102.4f + ydelta, 1f));
                     SpriteMask spriteMask = currentBlock.GetComponent<SpriteMask>();
                     spriteMask.backSortingOrder = 0;
+                    foreach (Transform borderObject in currentBlock.transform) {
+                        if (borderObject.name.Contains("Border")) {
+                            SpriteMask borderTex = borderObject.gameObject.GetComponent<SpriteMask>();
+                            borderTex.backSortingOrder = 0;
+                        }
+                    }
                 }
             }
         }

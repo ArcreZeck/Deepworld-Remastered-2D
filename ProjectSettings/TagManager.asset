@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: SpecialLayer
+    uniqueID: 3151322759
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -51,12 +54,9 @@ TagManager:
   - name: EarthFilter
     uniqueID: 2343385883
     locked: 0
-  - name: Purifier
-    uniqueID: 3022279673
+  - name: Glowybits
+    uniqueID: 3091739947
     locked: 0
   - name: Entities
     uniqueID: 3004025595
-    locked: 0
-  - name: PhysicalUI
-    uniqueID: 1147872849
     locked: 0

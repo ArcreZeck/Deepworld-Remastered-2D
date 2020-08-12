@@ -563,7 +563,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Fixed player hitbox'
+  m_Text: "- Fixed player hitbox\n\n- Added Sky\n\n- Added Sunlamp \n\n- Added Sun\n\n-
+    Added pickaxe to hand\n\n- Changed the selected item sprite\n\n- Added the \"tools\"
+    section of inventory\n\n- Other minor changes :D"
 --- !u!222 &455522479
 CanvasRenderer:
   m_ObjectHideFlags: 0

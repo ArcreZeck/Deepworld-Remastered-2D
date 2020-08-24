@@ -13,8 +13,4 @@ public class Menu : MonoBehaviour
             SceneManager.LoadScene("SelectionMenu");
         }
     }
-
-    public void exitGame() {
-        Application.Quit();
-    }   
 }

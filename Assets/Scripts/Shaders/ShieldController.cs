@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShieldController : MonoBehaviour
 {
     public Material shaderMat;
+    public Sprite shieldOffSprite;
+    public Sprite shieldOnSprite;
+    public GameObject shield;
     private float fade = 0;
     private bool isDissolving = false;
     private bool shieldOn = false;
@@ -12,6 +16,11 @@ public class ShieldController : MonoBehaviour
     public void toggleShield() {
         isDissolving = true;
         shieldOn = !shieldOn;
+        if (shieldOn) {
+            shield.GetComponent<Image>().sprite = shieldOnSprite;
+        } else {
+            shield.GetComponent<Image>().sprite = shieldOffSprite; 
+        }
     }
 
     private void Update() {

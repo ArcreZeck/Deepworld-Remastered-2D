@@ -2052,7 +2052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56467e4c312e94f45936a54f81012b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainWorldController: {fileID: 276774197}
   wcDesktop: {fileID: 456059190}
   wcMobile: {fileID: 1026166063564416806}
   transitionDesktop: {fileID: 1049938240}

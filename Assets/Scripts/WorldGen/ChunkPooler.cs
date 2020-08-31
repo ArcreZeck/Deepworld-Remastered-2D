@@ -31,7 +31,7 @@ public class ChunkPooler : MonoBehaviour
             for (int i = 0; i < pool.size; i++) 
             {
                 GameObject obj = Instantiate(pool.prefab);
-                obj.SetActive(false);
+                obj.SetActive(true);
                 objectPool.Enqueue(obj);
             }
             poolDict.Add(pool.tag, objectPool);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject mainWorldController;
     public GameObject wcDesktop;
     public GameObject wcMobile;
     public GameObject transitionDesktop;

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CaveGenerator : MonoBehaviour
 {
-    public GameObject parent;
-
     public string seed;
     public bool seedIsRandom;
     public int width;

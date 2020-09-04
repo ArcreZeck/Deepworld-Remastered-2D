@@ -75,6 +75,8 @@
      <Compile Include="Assets\Scripts\BlockEffects\TeleportBlue.cs" />
      <Compile Include="Assets\Scripts\Interface\BarCont.cs" />
      <Compile Include="Assets\Scripts\Player\DwData.cs" />
+     <Compile Include="Assets\Scripts\Player\CloudTime.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraTilemap.cs" />
      <None Include="Assets\ChonkyPixel\Assets\Documentation\Tilesheet Converter README.txt" />
      <None Include="Assets\Shaders\GaussianBlur.shader" />
     <Reference Include="UnityEngine">

@@ -14144,11 +14144,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 10
   m_Points:
-  - {x: -0.2, y: -0.8}
-  - {x: 0.3, y: -0.8}
-  - {x: 0.3, y: 0.8}
-  - {x: -0.2, y: 0.8}
-  - {x: -0.2, y: -0.8}
+  - {x: -0.2, y: -0.75}
+  - {x: 0.2, y: -0.75}
+  - {x: 0.2, y: 0.7}
+  - {x: -0.2, y: 0.7}
+  - {x: -0.2, y: -0.75}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -83744,7 +83744,7 @@ GameObject:
   - component: {fileID: 1365687827}
   - component: {fileID: 1365687829}
   m_Layer: 0
-  m_Name: Mountains
+  m_Name: FrontHills
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83758,7 +83758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365687825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1618039244}
@@ -83792,7 +83792,7 @@ MonoBehaviour:
   Player: {fileID: 209568199}
   divRatio: 1.1
   negRatioX: 0
-  negRatioY: 0
+  negRatioY: 40
 --- !u!1 &1369452297
 GameObject:
   m_ObjectHideFlags: 0
@@ -105250,7 +105250,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 6.1000004, y: 26.925716, z: 0}
+  m_ChunkCullingBounds: {x: 50.948235, y: 213.28859, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -105733,10 +105733,10 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.77625346, g: 0.8773585, b: 0.6497419, a: 1}
+  m_Color: {r: 0.5612394, g: 0.6320754, b: 0.47405657, a: 1}
   m_Origin: {x: -21, y: -7, z: 0}
   m_Size: {x: 41, y: 12, z: 1}
-  m_TileAnchor: {x: 0.5, y: -0.2, z: 0}
+  m_TileAnchor: {x: 0.5, y: -0.335, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
     e00: 1
@@ -139228,7 +139228,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.6099629, g: 0.6886792, b: 0.5360003, a: 1}
+  m_Color: {r: 0.5380508, g: 0.6037736, b: 0.4756141, a: 1}
   m_Origin: {x: -26, y: -12, z: 0}
   m_Size: {x: 51, y: 17, z: 1}
   m_TileAnchor: {x: 0.5, y: 0, z: 0}
@@ -141460,7 +141460,7 @@ GameObject:
   - component: {fileID: 1982110510}
   - component: {fileID: 1982110511}
   m_Layer: 0
-  m_Name: Skyback
+  m_Name: HillsBackplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141474,7 +141474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982110508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1960446925}
@@ -141508,7 +141508,7 @@ MonoBehaviour:
   Player: {fileID: 209568199}
   divRatio: 1.1
   negRatioX: 0
-  negRatioY: 0
+  negRatioY: 40
 --- !u!1 &1992241026
 GameObject:
   m_ObjectHideFlags: 0

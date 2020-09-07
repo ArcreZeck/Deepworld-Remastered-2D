@@ -4,11 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class PlayerCont : MonoBehaviour {
-    public LayerMask platformLayerMask;
     public float speed = 10f;
     public float jumpSpeed = 100f;
-    public Rigidbody2D rb2;
     public Transform mainTransform;
+    public Rigidbody2D rb2;
     public Camera mainCamera;
 
     Ray ray;    

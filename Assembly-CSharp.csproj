@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\WorldGen\BlockCont.cs" />
      <Compile Include="Assets\Scripts\Ad\AdButtonManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCont.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraTilemap.cs" />
      <Compile Include="Assets\Scripts\Block\RotateMedium.cs" />
      <Compile Include="Assets\Scripts\Interface\ScrollBG.cs" />
      <Compile Include="Assets\Scripts\WorldGen\ObjectPooler.cs" />
@@ -70,13 +71,13 @@
      <Compile Include="Assets\Scripts\Player\CameraCont.cs" />
      <Compile Include="Assets\Scripts\DynamicRes\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDataList.cs" />
+     <Compile Include="Assets\Scripts\Player\CloudTime.cs" />
      <Compile Include="Assets\Scripts\PlayerStyle\HairCont.cs" />
      <Compile Include="Assets\Scripts\Interface\AccPageManager.cs" />
      <Compile Include="Assets\Scripts\BlockEffects\TeleportBlue.cs" />
      <Compile Include="Assets\Scripts\Interface\BarCont.cs" />
      <Compile Include="Assets\Scripts\Player\DwData.cs" />
-     <Compile Include="Assets\Scripts\Player\CloudTime.cs" />
-     <Compile Include="Assets\Scripts\Player\CameraTilemap.cs" />
+     <Compile Include="Assets\Scripts\Player\Masktiles.cs" />
      <None Include="Assets\ChonkyPixel\Assets\Documentation\Tilesheet Converter README.txt" />
      <None Include="Assets\Shaders\GaussianBlur.shader" />
     <Reference Include="UnityEngine">

@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject transitionDesktop;
     public GameObject transitionMobile;
 
-    public void Start() {
+    public void Awake() {
         #if (UNITY_IOS || UNITY_ANDROID)
             wcMobile.SetActive(true);
             wcDesktop.SetActive(false);

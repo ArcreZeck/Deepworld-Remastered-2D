@@ -10,20 +10,16 @@ public class BackgroundSound : MonoBehaviour
 
     void Start() {
         while (index == prevIndex) {
-            Debug.Log("Getting new Index..");
             index = Random.Range(0, clips.Length - 1);
         }
         StartCoroutine(playSong());
     }
 
     IEnumerator playSong() {
-        Debug.Log("Running playSong()");
         clips[index].Play();
-        Debug.Log("Playing Song...");
         yield return new WaitForSeconds(clips[index].clip.length);
         prevIndex = index;
         while (index == prevIndex) {
-            Debug.Log("Getting new Index..");
             index = Random.Range(0, clips.Length - 1);
         }
         StartCoroutine(playSong());

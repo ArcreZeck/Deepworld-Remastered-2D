@@ -5,21 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class SwitchMenu : MonoBehaviour
 {
-    Scene currentScene;
-    string sceneName;
 
     public bool needsMusicTransition;
+    public bool needsImageMusicTransition;
     public Animator musicAnimator;
     public float musicWaitTime;
-
-    private void Start() {
-        currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;
-    }
 
     public void SwitchScene(string scene) {
         if (needsMusicTransition) {
             StartCoroutine(MusicSceneTransition(scene));
+        } else {
+            SceneManager.LoadScene(scene);
+        }
+    }
+
+    public void SwitchSceneImage(string scene) {
+        if (needsImageMusicTransition) {
+            StartCoroutine(MusicSceneTransitionImage(scene));
         } else {
             SceneManager.LoadScene(scene);
         }
@@ -31,6 +33,12 @@ public class SwitchMenu : MonoBehaviour
     
     IEnumerator MusicSceneTransition(string scene) {
         musicAnimator.SetTrigger("fadeOut");
+        yield return new WaitForSeconds(musicWaitTime);
+        SceneManager.LoadScene(scene);
+    }
+
+    IEnumerator MusicSceneTransitionImage(string scene) {
+        musicAnimator.SetTrigger("fadeOutImage");
         yield return new WaitForSeconds(musicWaitTime);
         SceneManager.LoadScene(scene);
     }

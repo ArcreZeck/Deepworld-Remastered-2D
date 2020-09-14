@@ -1587,9 +1587,32 @@ MonoBehaviour:
     custom resolutions for Mobile
 
 
-    - Changed main menu changelog
+    - Added Clouds
 
-'
+
+    - Added Daytime
+
+
+    -
+    Added (Temporarily Disabled) Daylight Cycle
+
+
+    - Removed world generation
+
+
+    -
+    Removed world mask (dirt)
+
+
+    - Added new chunk and tile world gen system (NO
+    CAVES YET)
+
+
+    - Added hills and mountains + parallaxed view
+
+
+    - Removed
+    some problems with block destruction and placement'
 --- !u!222 &405162142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7743,9 +7766,32 @@ MonoBehaviour:
     custom resolutions for Mobile
 
 
-    - Changed main menu changelog
+    - Added Clouds
 
-'
+
+    - Added Daytime
+
+
+    -
+    Added (Temporarily Disabled) Daylight Cycle
+
+
+    - Removed world generation
+
+
+    -
+    Removed world mask (dirt)
+
+
+    - Added new chunk and tile world gen system (NO
+    CAVES YET)
+
+
+    - Added hills and mountains + parallaxed view
+
+
+    - Removed
+    some problems with block destruction and placement'
 --- !u!222 &1026166065099923747
 CanvasRenderer:
   m_ObjectHideFlags: 0

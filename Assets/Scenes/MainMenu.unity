@@ -189,7 +189,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848921475}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -1197,7 +1197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &276961702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1577,42 +1577,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added Sun
+  m_Text: '- Working on applying worldgen to Chunks System
 
 
-    - Working on Touch Screen Support
-
-
-    - Setting up
-    custom resolutions for Mobile
-
-
-    - Added Clouds
-
-
-    - Added Daytime
+    - Added Sounds
 
 
     -
-    Added (Temporarily Disabled) Daylight Cycle
-
-
-    - Removed world generation
-
-
-    -
-    Removed world mask (dirt)
-
-
-    - Added new chunk and tile world gen system (NO
-    CAVES YET)
-
-
-    - Added hills and mountains + parallaxed view
-
-
-    - Removed
-    some problems with block destruction and placement'
+    Added some more inventory tabs'
 --- !u!222 &405162142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1675,6 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needsMusicTransition: 0
+  needsImageMusicTransition: 0
   musicAnimator: {fileID: 0}
   musicWaitTime: 0
 --- !u!114 &445352069
@@ -1799,7 +1772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &456059191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,8 +2097,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1606263669}
   - {fileID: 53169333}
+  - {fileID: 1606263669}
   m_Father: {fileID: 1408920326}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2522,7 +2495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DWRE Beta 0.6.4
+  m_Text: Beta 6.6_pre3
 --- !u!222 &998994968
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3920,7 +3893,7 @@ RectTransform:
   - {fileID: 241173244}
   - {fileID: 405162140}
   m_Father: {fileID: 848921475}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -3997,6 +3970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needsMusicTransition: 1
+  needsImageMusicTransition: 0
   musicAnimator: {fileID: 1656288571}
   musicWaitTime: 0.5
 --- !u!82 &1656288570
@@ -5307,6 +5281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needsMusicTransition: 0
+  needsImageMusicTransition: 0
   musicAnimator: {fileID: 0}
   musicWaitTime: 0
 --- !u!114 &1026166063549068790
@@ -7394,7 +7369,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DWRE Beta 0.6.4
+  m_Text: Beta 6.6_pre3
 --- !u!222 &1026166064973096190
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7756,42 +7731,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added Sun
+  m_Text: '- Working on applying worldgen to Chunks System
 
 
-    - Working on Touch Screen Support
-
-
-    - Setting up
-    custom resolutions for Mobile
-
-
-    - Added Clouds
-
-
-    - Added Daytime
+    - Added Sounds
 
 
     -
-    Added (Temporarily Disabled) Daylight Cycle
-
-
-    - Removed world generation
-
-
-    -
-    Removed world mask (dirt)
-
-
-    - Added new chunk and tile world gen system (NO
-    CAVES YET)
-
-
-    - Added hills and mountains + parallaxed view
-
-
-    - Removed
-    some problems with block destruction and placement'
+    Added some more inventory tabs'
 --- !u!222 &1026166065099923747
 CanvasRenderer:
   m_ObjectHideFlags: 0

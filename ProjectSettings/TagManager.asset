@@ -5,6 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - SolidBlockTag
+  - Conductor
+  - Freezable
+  - PPaint
+  - Tornado
+  - Grass
+  - Flamer
+  - Flammable
+  - SkyMasterTree
+  - water
+  - Butter
+  - NoForcePDM
   layers:
   - Default
   - TransparentFX

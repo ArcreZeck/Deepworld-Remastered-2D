@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 
 public class BlockCont : MonoBehaviour {
     public int blockId;
-    float blockHealth = 50f;
-    float tempHealth;
+    private float blockHealth = 50f;
+    private float tempHealth;
     private SpriteRenderer spriteRenderer;
 
     private void Start() {
@@ -19,33 +19,23 @@ public class BlockCont : MonoBehaviour {
     private void OnMouseOver() {
         if (Input.GetMouseButton(0)) {
             if (!EventSystem.current.IsPointerOverGameObject()) {
-                if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
-                    spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
-                } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
-                    spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
-                } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
-                    spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
-                } else if (tempHealth >= 0) {
-                    Destroy(gameObject);
-                }
-                tempHealth--;
+                if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
+                else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
+                else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
+                else if (tempHealth >= 0) Destroy(gameObject);
+                tempHealth -= 0.1f;
             }
         }
     }
 
-    private void OnMouseDown() {
-        if (!EventSystem.current.IsPointerOverGameObject()) {
-            if (tempHealth >= Math.Truncate(blockHealth / 4 * 3) && tempHealth <= blockHealth) {
-                spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack1");
-            } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 2) && tempHealth <= Math.Truncate(blockHealth / 4 * 3)) {
-                spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack2");
-            } else if (tempHealth >= Math.Truncate(blockHealth / 4 * 1) && blockHealth <= 0) {
-                spriteRenderer.sprite = Resources.Load<Sprite>("Effects/crack3");
-            } else if (tempHealth >= 0) {
-                Destroy(gameObject);
-            }
-            tempHealth -= tempHealth / 4;
-        }
+    private void OnMouseExit() {
+        tempHealth = blockHealth;
+        spriteRenderer.sprite = Resources.Load<Sprite>("");
+    }
+
+    private void OnMouseUp() {
+        tempHealth = blockHealth;
+        spriteRenderer.sprite = Resources.Load<Sprite>("");
     }
 
     private bool IsCloseToTag(string tag, float minimumDistance) {

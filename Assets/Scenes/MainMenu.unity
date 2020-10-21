@@ -549,8 +549,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: 650, y: 70}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: 650, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143638607
 MonoBehaviour:
@@ -880,8 +880,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Deepworld assets are Copyright 2014 Bytebin LLC. Bytebin is not affiliated
+  m_Text: 'Deepworld assets are Copyright 2014 Bytebin LLC. Bytebin is not affiliated
     with and does not endorse, sponsor, or specifically approve this application
+
+
+    Deepworld
+    Remastered logic and assets are owned and created by Taylor Schneider / Mister
+    SirCode. Do not distribute under a different name or owner, LEGAL ACTION WILL
+    BE APPREHENDED'
 --- !u!222 &244518055
 CanvasRenderer:
   m_ObjectHideFlags: 0
